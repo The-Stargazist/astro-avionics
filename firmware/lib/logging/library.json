@@ -1,0 +1,6 @@
+{
+  "name": "logging",
+  "version": "1.0.0",
+  "description": "Non-blocking double-buffered log and SD log file naming",
+  "frameworks": "arduino"
+}

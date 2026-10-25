@@ -1,0 +1,6 @@
+{
+  "name": "pyro",
+  "version": "1.0.0",
+  "description": "VADA pyro channel continuity test and non-blocking firing",
+  "frameworks": "arduino"
+}

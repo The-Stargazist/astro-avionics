@@ -1,0 +1,6 @@
+{
+  "name": "sensors",
+  "version": "1.0.0",
+  "description": "I2C drivers for the VADA board sensors: BMP390, ICM-20649, LIS3MDL",
+  "frameworks": "arduino"
+}

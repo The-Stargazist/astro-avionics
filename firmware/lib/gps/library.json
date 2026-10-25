@@ -1,0 +1,5 @@
+{
+  "name": "gps",
+  "version": "1.0.0",
+  "description": "Hardware-independent NMEA 0183 GGA/RMC parser"
+}

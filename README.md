@@ -4,22 +4,32 @@ Flight computer system for rocket missions.
 
 ## Project Structure
 
-- **`pico/`** - New flight computer implementation (Raspberry Pi Pico)
-  - PlatformIO project for the current flight computer development
-  
+- **`firmware/`** - Current flight computer firmware for the VADA board
+  (two Raspberry Pi Pico 2). One PlatformIO project with an environment per
+  board: `pico_a` (deployment) and `pico_b` (sensors, telemetry, logging).
+  See [`firmware/README.md`](firmware/README.md).
+- **`vada/`** - VADA PCB (KiCad schematic, layout, STEP model).
 - **`dosa-2025/`** - Previous flight computer code (archived)
-  - Contains the previous implementation for reference
-  - Arduino Nano ESP32 + Raspberry Pi based system
+  - Arduino Nano ESP32 + Raspberry Pi based system, kept for reference only
 
 ## Getting Started
 
-Navigate to the `pico/` directory to start development:
+Open `firmware/` in VS Code with the PlatformIO extension, or use the CLI:
 
 ```bash
-cd pico
+cd firmware
 ```
 
-Open the project in PlatformIO to build and upload the firmware.
+```bash
+pio run
+```
+
+```bash
+pio test -e native
+```
+
+Before flying, read the board setup and hardware notes in
+[`firmware/README.md`](firmware/README.md).
 
 ## License
 
